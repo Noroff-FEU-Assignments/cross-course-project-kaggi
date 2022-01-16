@@ -118,6 +118,7 @@ header a {
 
 .cta {
   background-color: #5c1122;
+  background-size: cover;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5em;
@@ -146,4 +147,34 @@ header a {
   clear: both;
   content: "";
   display: table;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .navigation_logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .menu_items {
+    flex: 1;
+  }
+
+  .logo_picture {
+    min-width: 115px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fa-user-circle {
+    min-width: 115 px;
+  }
+
+  .hompage_picture {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .footer_empty {
+    flex: 1;
+  }
 }
