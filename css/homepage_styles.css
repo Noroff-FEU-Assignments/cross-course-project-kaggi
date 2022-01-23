@@ -1,0 +1,29 @@
+/* Homepage content*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hompage_text p {
+  padding: 5px;
+}
+
+.homepage_cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.homepage_figure {
+  flex: 1;
+}
+
+.homepage_text {
+  flex: 3;
+}
