@@ -1,0 +1,32 @@
+.about_container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+}
+
+.how_for_creators {
+  display: flex;
+}
+
+.creator_figure {
+  flex: 1;
+}
+
+.how_to_creator_copy {
+  flex: 4;
+}
+
+.how_for_watcher {
+  display: flex;
+}
+
+.watcher_figure {
+  flex: 1;
+}
+
+.how_to_watcher_copy {
+  flex: 4;
+}
