@@ -1,0 +1,133 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Remember description-->
+    <meta 
+      name="description"
+      content="Information about chosen film"
+    />
+    <title>Square Eyes | Title</title>
+    <link href="css/square_eyes_styles.css" rel="stylesheet" />
+    <!--Specific for the page-->
+    <link href="css/film.css" rel="stylesheet" />
+    <!--Media queries-->
+    <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b9ea43cd7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>  
+  <!-- Navigatiom. -->      
+      <nav>
+        <figure class="navigation_logo_picture">
+          <a href="index.html" >
+            <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
+          </a>
+        </figure>
+        <div class="navigation_links">
+          <!--Remember to set current page class="current_page" -->
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="search.html">Search</a></li>
+          </ul>
+        </div>
+        <div class="navigation_login_icon">
+            <a href="login.html" >
+                <img src="images/watcher_acc_picture_small.jpg" alt="Profile picture" class="navigation_profile_picture" /></br>
+                <p>Log out</p>
+              </a>
+        </div>
+    </nav> 
+
+    <!--Main - page content --> 
+    <main> 
+        <header>
+            <h1>Title</h1>
+        </header>
+
+        <div class="video_page_container"> 
+
+          <div class="video_page_container_left">
+          
+            <div class="video_and_about">
+              <section class="video_section">
+                <video src="video/video.mp4" controls class="video">Title</video>
+                  <div class="text_under_video">
+                    <p>Add to favourits <i class="far fa-heart"></i></p>
+                    <p>Created by: Creator</p>                  
+                  </div>
+              </section> <!--End video_section-->
+
+              <section class="about_film">
+                <h2>About this film</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eligendi sapiente architecto laborum non tempore beatae itaque voluptatem totam, asperiores a quas iste accusantium nisi laboriosam omnis modi id qui aut ipsam quidem officiis exercitationem debitis. Quasi veritatis recusandae doloribus nulla aspernatur dolores pariatur repudiandae, similique obcaecati. Facere, minima harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nobis excepturi? Optio delectus iusto nostrum numquam neque quisquam tempore ea, pariatur quaerat, explicabo amet voluptas voluptatem blanditiis quos vero assumenda libero facilis sit! Eum hic ad est, cum adipisci, cumque cupiditate placeat dolores ex beatae labore odit necessitatibus ipsa voluptates?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eligendi sapiente architecto laborum non tempore beatae itaque voluptatem totam, asperiores a quas iste accusantium nisi laboriosam omnis modi id qui aut ipsam quidem officiis exercitationem debitis. Quasi veritatis recusandae doloribus nulla aspernatur dolores pariatur repudiandae, similique obcaecati. Facere, minima harum.</p>
+              </section> <!--End about_film-->
+            </div>  <!--End video_and_about-->
+
+            <section class="trailer_or_pay" id="trailer_pay_options">
+              <h3>Watch trailer</h3>
+              <p>or</p>
+              <p><a href="payment_options.html" class="cta cta_blue">Pay Per View</a></p>
+            </section> <!--End trailer_or_pay-->
+        
+          </div><!--End video_page_container_left-->
+
+        <div class="video_page_container_right">
+          <section class="comments">
+            <h2>Last comments</h2>
+
+            <ul>
+                <li class="watcher_comment_box">
+                    
+                        <p id="watcher_screenname">By: Watcher1</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis ut nulla, aliquid totam iure accusamus soluta repellat maxime officiis obcaecati omnis eos saepe incidunt? Explicabo nihil debitis placeat voluptate reiciendis necessitatibus voluptatibus minima autem ducimus accusamus sint omnis labore modi sapiente cum error, excepturi at. Aspernatur, officia eveniet similique culpa excepturi exercitationem qui facilis architecto totam! Excepturi sapiente assumenda cumque beatae consectetur impedit, expedita accusantium nisi quisquam alias possimus delectus? Earum accusantium enim, id rerum mollitia reiciendis laborum eligendi eaque facilis, exercitationem aperiam laudantium ut explicabo saepe atque, voluptatibus omnis dignissimos! Deserunt repellat voluptatibus, vero sed consequatur velit dignissimos.</p>
+        
+                </li>
+
+                <li class="watcher_comment_box">
+                    
+                    <p id="watcher_screenname">By: Watcher2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis ut nulla, aliquid totam iure accusamus soluta repellat maxime officiis obcaecati omnis eos saepe incidunt? Explicabo nihil debitis placeat voluptate reiciendis necessitatibus voluptatibus minima autem ducimus accusamus sint omnis labore modi sapiente cum error, excepturi at. Aspernatur, officia eveniet similique culpa excepturi exercitationem qui facilis architecto totam! Excepturi sapiente assumenda cumque beatae consectetur impedit, expedita accusantium nisi quisquam alias possimus delectus? Earum accusantium enim, id rerum mollitia reiciendis laborum eligendi eaque facilis, exercitationem aperiam laudantium ut explicabo saepe atque, voluptatibus omnis dignissimos! Deserunt repellat voluptatibus, vero sed consequatur velit dignissimos.</p>
+    
+                </li>                
+            </ul>
+
+            <section class="add_comment">
+                <h3>Add comment</h3>
+                <input type="textarea" name="watcher_comment_field" id="add_comment_field" />
+                <div id="add_comment_button_div">
+                    <input type="submit" name="add_comment_button" value="Submit" />
+                </div>
+            </section> <!--End add_comment-->
+          </section> <!--End comments-->
+      
+        </div><!--End video_page_container_right-->
+
+      </div> <!--End video_page_container-->
+
+    </main>
+
+    <!--Footer-->  
+    <footer>
+      <div class="footer_contact_info">
+        <p>
+          Contact us: 
+          E-mail: post@squareeys.com 
+          Phone: (+XX)XXXXXXXX
+        </p>
+      </div>      
+      <div class="footer_created_by">
+        <p>
+          Created by:
+          X. X. Xxxxxxxxx
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.search_results_section {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_results_list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#film_search {
+  list-style-type: none;
+}
+
+#film_search_item a {
+  color: #1d2354;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#film_search_item a:visited {
+  color: #5c1122;
+}
+
+#film_search_item p {
+  font-size: 15px;
+}
+
+#film_frame {
+  grid-area: film_frame;
+}
+
+#film_title {
+  grid-area: film_title;
+}
+
+#film_creator {
+  grid-area: film_creator;
+}
+
+#film_search_item {
+  width: 250px;
+  display: grid;
+  grid-template-areas:
+    "film_frame film_title"
+    "film_frame film_creator";
+}
+
+#film_frame {
+  padding-bottom: 5px;
+}

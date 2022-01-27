@@ -1,17 +1,17 @@
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Remember description-->
     <meta 
       name="description"
-      content="Log in to use member functions"
+      content="Pay to watch the chosen film"
     />
-    <title>Square Eyes | Log In</title>
+    <title>Square Eyes | Pay to watch </title>
     <link href="css/square_eyes_styles.css" rel="stylesheet" />
     <!--Specific for the page-->
-    <link href="css/login.css" rel="stylesheet" />
-
+    <link href="css/payment_options.css" rel="stylesheet" />
     <!--Media queries-->
     <link href="css/media.css" rel="stylesheet" />
     <script
@@ -34,48 +34,40 @@
             <li><a href="index.html" >Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="search.html">Search</a></li>
+            <li><a href="watcher_account.html">Account</a></li>
           </ul>
         </div>
         <div class="navigation_login_icon">
           <a href="login.html" >
-            <i class="fas fa-user-circle"></i></br>
-            <p>Log in</p>
+            <img src="images/watcher_acc_picture_small.jpg" alt="Profile picture" class="navigation_profile_picture" /></br>
+            <p>Log out</p>
           </a>
         </div>
     </nav> 
 
     <!--Main - page content --> 
     <main> 
-        
-        <section class="login_form_section">
-              <form class="login_form">
-                
-
-                
-                  <label for="email" id="email_label">E-mail:</label>               
-                  <input type="email" id="email_field" placeholder="E-mail" />
-                  
-
-                
-                  <label for="password" id="password_label">Password:</label>
-                  <input type="password" id="password_field" placeholder="*********"/>
-                
-              </form> <!--End login_form-->
-
-              <div class="login_button_section">
-
-                <a href="#" class="cta cta_red" id="login_button">Log In</a> 
-                <p id="join_us">Do not have an account? <a href="create_account.html">Join us>></a></p> 
-              </div>
-              
-        </section>
+        <div class="payment_summary" >
+            <p id="film">Film:</p>
+            <p id="title">Title</p>
+            <p id="created_by">Created by:</p>
+            <p id="creator">Creator</p>
+            <p id="topay">To pay:</p>
+            <p id="sum">$00.00</p>
+        </div>
+        <p>Choose payment method</p>
+        <div class="paypal">
+            <input type="radio" name="payment_method" value="paypal" id="paypal_payment_method" />
+            <label for="paypal_payment_method" id="label_for_paypal">PayPal</label>
+        </div>
+        <div class="card">
+            <input type="radio" name="payment_method" value="card" id="card_payment_method" />
+            <label for="card_payment_method" id="label_for_card">Debit/Credit Card</label>
+        </div>
+        <div class="topayment">
+            <a href="#" class="cta cta_red" id="topayment_button">To Payment</a>
+        </div>
     </main>
-
-    <div class="comment">
-      <p>This is an example of how the login page looks like</p>
-      <a href="login_creator.html">To test inloggging as Creator klikk here>></a> </br>
-      <a href="login_watcher.html">To test inloggging as Watcher klikk here>></a>
-  </div> <!--End comment-->
 
     <!--Footer-->  
     <footer>

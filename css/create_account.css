@@ -1,0 +1,72 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.create_account_section {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.create_account_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create_account_section p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.radio_buttons {
+  text-align: center;
+}
+
+#create_account_button {
+  padding: 10px 15px;
+}
+
+#crt_screenname_label {
+  grid-area: crt_screenname_label;
+}
+#crt_screenname_field {
+  grid-area: crt_screenname_field;
+}
+#crt_email_label {
+  grid-area: crt_email_label;
+}
+#crt_email_field {
+  grid-area: crt_email_field;
+}
+#crt_password_label {
+  grid-area: crt_password_label;
+}
+#crt_password_field {
+  grid-area: crt_password_field;
+}
+#crt_repeat_password_label {
+  grid-area: crt_repeat_password_label;
+}
+#crt_repeat_password_field {
+  grid-area: crt_repeat_password_field;
+}
+
+.input_fields {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+    "crt_screenname_label crt_screenname_field"
+    "crt_email_label crt_email_field"
+    "crt_password_label crt_password_field"
+    "crt_repeat_password_label crt_repeat_password_field";
+}
+
+.create_account_button_section {
+  margin-top: 25px;
+  align-self: center;
+}

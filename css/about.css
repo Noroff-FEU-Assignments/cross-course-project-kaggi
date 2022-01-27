@@ -1,0 +1,65 @@
+header {
+  text-align: center;
+}
+
+.join_us {
+  text-align: center;
+  margin: auto;
+}
+
+.how_to {
+  margin-right: 2em;
+}
+
+.how_to img {
+  padding-left: 10px;
+}
+
+.how_to h2,
+p {
+  padding-left: 25px;
+}
+
+header {
+  grid-area: about_header;
+}
+
+.how_to {
+  grid-area: how_to;
+}
+
+.join_us {
+  grid-area: join_us;
+}
+
+.about_container {
+  display: grid;
+  grid-template-areas:
+    "about_header about_header"
+    "how_to join_us";
+}
+
+.creator_figure {
+  grid-area: creator_figure;
+}
+.how_to_creator_copy {
+  grid-area: how_to_creator_copy;
+}
+
+.how_for_creators {
+  display: grid;
+  grid-template-areas: "creator_figure how_to_creator_copy";
+}
+
+.watcher_figure {
+  grid-area: watcher_figure;
+}
+
+.how_to_watcher_copy {
+  grid-area: how_to_watcher_copy;
+}
+
+.how_for_watcher {
+  display: grid;
+  grid-template-areas: "watcher_figure how_to_watcher_copy";
+}

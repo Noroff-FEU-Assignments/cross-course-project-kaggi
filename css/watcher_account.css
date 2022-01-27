@@ -1,0 +1,127 @@
+h1 {
+  text-align: center;
+}
+
+.watcher_fav_films_list,
+.watcher_fav_creators_list {
+  list-style-type: none;
+}
+
+.watcher_fav_films_list {
+  margin-left: 10px;
+}
+
+.watcher_account_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.watcher_account_content_left {
+  flex: 1;
+}
+
+.watcher_account_content_center {
+  flex: 1;
+}
+
+.watcher_account_content_right {
+  flex: 1;
+}
+
+.watcher_fav_films_list,
+.watcher_fav_creators_list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#watcher_profile_email_label {
+  grid-area: watcher_profile_email_label;
+}
+#watcher_profile_email_address {
+  grid-area: watcher_profile_email_address;
+}
+#watcher_profile_mobile_label {
+  grid-area: watcher_profile_mobile_label;
+}
+#watcher_profile_mobile_info {
+  grid-area: watcher_profile_mobile_info;
+}
+
+.watcher_profile_contact_info {
+  max-width: 300px;
+  display: grid;
+  justify-items: start;
+  grid-template-areas:
+    "watcher_profile_email_label watcher_profile_email_address"
+    "watcher_profile_mobile_label watcher_profile_mobile_info";
+}
+
+.watcher_profile_contact_info {
+  margin-bottom: 10px;
+}
+
+.watcher_profile_contact_info p {
+  margin: 0;
+}
+
+.watcher_profile_social_media_icons {
+  max-width: 300px;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.watcher_profile_edit_button {
+  margin-top: 25px;
+}
+
+#film_frame {
+  grid-area: film_frame;
+}
+
+#film_title {
+  grid-area: film_title;
+}
+
+#film_creator {
+  grid-area: film_creator;
+}
+
+#watcher_fav_film_item {
+  width: 250px;
+  gap: 5px;
+  display: grid;
+  grid-template-areas:
+    "film_frame film_title"
+    "film_frame film_creator";
+}
+
+#film_frame {
+  padding-bottom: 5px;
+}
+
+#creator_list_picture {
+  padding-bottom: 5px;
+}
+
+#creator_list_picture {
+  grid-area: creator_list_picture;
+}
+#fav_creator {
+  grid-area: fav_creator;
+}
+
+#watcher_fav_creator_item {
+  width: 250px;
+  gap: 5px;
+  display: grid;
+  grid-template-areas: "creator_list_picture fav_creator";
+}
+
+.watcher_profile_social_media_icons {
+  color: #5c1122;
+}
