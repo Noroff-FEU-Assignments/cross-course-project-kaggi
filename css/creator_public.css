@@ -2,36 +2,11 @@ h1 {
   text-align: center;
 }
 
-.creator_account_content {
+.creator_profile_content {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-}
-
-.creator_account_content_left {
-  flex: 1;
-}
-
-.creator_account_content_middle {
-  flex: 3;
-}
-
-.creator_account_content_right {
-  flex: 1;
-}
-
-/*Left section*/
-
-.creator_account_content_left {
-  display: flex;
-  flex-direction: column;
-}
-.creator_contact_container {
-  flex: 3;
-}
-
-.creator_profile_edit_button {
-  flex: 1;
+  gap: 20px;
+  justify-content: center;
 }
 
 #creator_profile_email_label {
@@ -80,8 +55,6 @@ h1 {
   color: #5c1122;
 }
 
-/* Middle section */
-
 .creator_uploads_list {
   list-style-type: none;
 }
@@ -113,20 +86,4 @@ h1 {
 
 #upload_date {
   margin: 0;
-}
-
-/*Right section */
-
-.creator_account_content_right {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-}
-
-.creator_balance {
-  flex: 3;
-}
-
-.upload_new_button {
-  flex: 1;
 }

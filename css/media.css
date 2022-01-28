@@ -139,6 +139,14 @@
   .video_and_about {
     flex-direction: column;
   }
+
+  /*Creator public*/
+
+  .creator_profile_content {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 450px) {
