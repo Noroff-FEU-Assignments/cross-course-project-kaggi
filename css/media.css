@@ -1,5 +1,12 @@
 /*Media*/
 
+@media only screen and (min-device-width: 1110px) and (max-device-width: 1380px) {
+  /*Creator account page*/
+  .creator_account_content_middle {
+    flex: 2;
+  }
+}
+
 @media only screen and (min-device-width: 900px) and (max-device-width: 1300px) {
   .homepage_cta {
     margin-bottom: 1em;
@@ -8,6 +15,21 @@
   .video {
     width: 427px;
     height: 240px;
+  }
+}
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1110px) {
+  /*Creator account page*/
+  .creator_account_content_middle {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1110px) {
+  .creator_account_content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
   }
 }
 
