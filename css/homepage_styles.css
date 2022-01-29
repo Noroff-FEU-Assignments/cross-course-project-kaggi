@@ -3,10 +3,15 @@
 main {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .homepage_picture {
   width: 100%;
+}
+
+.homepage_text {
+  padding: 5px;
 }
 
 .hompage_text p {
