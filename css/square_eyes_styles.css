@@ -1,5 +1,15 @@
 /*General*/
 
+@font-face {
+  font-family: "semplicita.medium";
+  src: url("../fonts/semplicita.medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BaskervaldADFStd";
+  src: url("../fonts/BaskervaldADFStd.otf") format("opentype");
+}
+
 body {
   background-color: #e8e8e8;
   min-height: 100vh;
@@ -13,7 +23,7 @@ nav,
 footer {
   background-color: #5c1122;
   color: #c9b99f;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "semplicita.medium", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navigation_profile_picture {
@@ -22,16 +32,16 @@ footer {
 
 main {
   color: black;
-  font-family: Georgia, Times, serif;
+  font-family: "BaskervaldADFStd", Georgia, Times, serif;
   font-size: 20px;
 }
 
 .cta {
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "semplicita.medium", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: 1.3em;
-  padding: 10px 60px;
+  padding: 10px 30px;
   border-radius: 15px;
   font-weight: bold;
 }
@@ -57,7 +67,7 @@ main {
 h1,
 h2,
 h3 {
-  font-family: Georgia, Times, serif;
+  font-family: "BaskervaldADFStd", Georgia, Times, serif;
   color: #5c1122;
 }
 
