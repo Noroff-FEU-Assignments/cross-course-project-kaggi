@@ -4,11 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Remember description-->
-    <meta 
-      name="description"
-      content="Watcher account page "
-    />
-    <title>Square Eyes | Account </title>
+    <meta name="description" content="Watcher account page " />
+    <title>Square Eyes | Account</title>
     <link href="css/square_eyes_styles.css" rel="stylesheet" />
     <!--Specific for the page-->
     <link href="css/watcher_account.css" rel="stylesheet" />
@@ -18,131 +15,178 @@
       src="https://kit.fontawesome.com/b9ea43cd7c.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Hotjar Tracking Code for https://optimistic-lamarr-43e7e3.netlify.app -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2968503, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
-  <body>  
-  <!-- Navigatiom. -->      
-      <nav>
-        <figure class="navigation_logo_picture">
-          <a href="index.html" >
-            <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
-          </a>
-        </figure>
-        <div class="navigation_links">
-          <!--Remember to set current page class="current_page" -->
-          <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="search.html">Search</a></li>
-            
-          </ul>
-        </div>
-        <div class="navigation_login_icon">
-            <a href="login.html" >
-                <img src="images/watcher_acc_picture_small.jpg" alt="Profile picture" class="navigation_profile_picture" />
-                <br>
-                <p>Log out</p>
-              </a>
-        </div>
-    </nav> 
+  <body>
+    <!-- Navigatiom. -->
+    <nav>
+      <figure class="navigation_logo_picture">
+        <a href="index.html">
+          <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
+        </a>
+      </figure>
+      <div class="navigation_links">
+        <!--Remember to set current page class="current_page" -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="search.html">Search</a></li>
+        </ul>
+      </div>
+      <div class="navigation_login_icon">
+        <a href="login.html">
+          <img
+            src="images/watcher_acc_picture_small.jpg"
+            alt="Profile picture"
+            class="navigation_profile_picture"
+          />
+          <br />
+          <p>Log out</p>
+        </a>
+      </div>
+    </nav>
 
-    <!--Main - page content --> 
+    <!--Main - page content -->
     <main>
-      
-        <header>
-          <h1>My profile</h1>
-        </header>
-        <section class="watcher_account_content"> 
+      <header>
+        <h1>My profile</h1>
+      </header>
+      <section class="watcher_account_content">
+        <div class="watcher_account_content_left">
+          <h2>Screenname</h2>
+          <img
+            src="images/watcher_acc_picture_middle.jpg"
+            class="watcher_account_picture"
+            alt="Profile picture"
+          />
+          <h2>Contact info</h2>
+          <div class="watcher_profile_contact_info">
+            <p id="watcher_profile_email_label">E-mail</p>
+            <p id="watcher_profile_email_address">watcher@email.com</p>
+            <p id="watcher_profile_mobile_label">Phone</p>
+            <p id="watcher_profile_mobile_info">(+xx)xxxxxxxxx</p>
+          </div>
+          <!--End watcher_profile_contact_info-->
+          <div class="watcher_profile_social_media_icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+          <!--End watcher_profile_social_media_icons-->
+          <div class="watcher_profile_edit_button">
+            <p><a href="#" class="cta cta_blue">Edit Profile</a></p>
+          </div>
+          <!--End watcher_profile_edit_button-->
+        </div>
+        <!--End watcher_account_content_left-->
 
-          
-            <div class="watcher_account_content_left">
-                <h2>Screenname</h2>
-                <img src="images/watcher_acc_picture_middle.jpg" class="watcher_account_picture" alt="Profile picture" />
-                <h2>Contact info</h2>
-                <div class="watcher_profile_contact_info">
-                    <p id="watcher_profile_email_label">E-mail</p>
-                    <p id="watcher_profile_email_address">watcher@email.com</p>
-                    <p id="watcher_profile_mobile_label">Phone</p>
-                    <p id="watcher_profile_mobile_info">(+xx)xxxxxxxxx</p>
-                </div> <!--End watcher_profile_contact_info-->
-                <div class="watcher_profile_social_media_icons">
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-youtube"></i>
-                </div> <!--End watcher_profile_social_media_icons-->
-                <div class="watcher_profile_edit_button">
-                    <p><a href="#" class="cta cta_blue">Edit Profile</a></p>
-                </div> <!--End watcher_profile_edit_button-->
+        <div class="watcher_account_content_center">
+          <h2>My favourite films</h2>
 
-            </div> <!--End watcher_account_content_left-->
+          <ul class="watcher_fav_films_list">
+            <li id="watcher_fav_film_item">
+              <img
+                src="images/film_small.jpg"
+                alt="A frame from film"
+                id="film_frame"
+              />
+              <a href="film.html" class="list_link" id="film_title">Title>> </a>
+              <br />
+              <a href="creator_public.html" id="film_creator">By: Creator>></a>
+            </li>
+            <li id="watcher_fav_film_item">
+              <img
+                src="images/film_small.jpg"
+                alt="A frame from film"
+                id="film_frame"
+              />
+              <a href="film.html" class="list_link" id="film_title">Title>> </a>
+              <br />
+              <a href="creator_public.html" id="film_creator">By: Creator>></a>
+            </li>
+            <li id="watcher_fav_film_item">
+              <img
+                src="images/film_small.jpg"
+                alt="A frame from film"
+                id="film_frame"
+              />
+              <a href="film.html" class="list_link" id="film_title">Title>> </a>
+              <br />
+              <a href="creator_public.html" id="film_creator">By: Creator>></a>
+            </li>
+            <li><a href="#" class="list_link"> Show all>></a></li>
+          </ul>
+          <!--End watcher_fav_films_list-->
+        </div>
+        <!--End watcher_account_content_middle-->
 
-            <div class="watcher_account_content_center">
-                <h2>My favourite films</h2>
+        <div class="watcher_account_content_right">
+          <h2>My favourite creators</h2>
 
-                <ul class="watcher_fav_films_list">
-                    <li id="watcher_fav_film_item">
-                        <img src="images/film_small.jpg" alt="A frame from film" id="film_frame" />
-                        <a href="film.html" class="list_link" id="film_title">Title>> </a> <br>
-                        <a href="creator_public.html" id="film_creator">By: Creator>></a>
-                    </li>
-                    <li id="watcher_fav_film_item">
-                        <img src="images/film_small.jpg" alt="A frame from film" id="film_frame" />
-                        <a href="film.html" class="list_link" id="film_title">Title>> </a> <br>
-                        <a href="creator_public.html" id="film_creator">By: Creator>></a>
-                    </li>
-                    <li id="watcher_fav_film_item">
-                        <img src="images/film_small.jpg" alt="A frame from film" id="film_frame" />
-                        <a href="film.html" class="list_link" id="film_title">Title>> </a> <br>
-                        <a href="creator_public.html" id="film_creator">By: Creator>></a>
-                    </li>
-                    <li><a href="#" class="list_link"> Show all>></a></li>
-                </ul> <!--End watcher_fav_films_list-->
-                
-
-            </div> <!--End watcher_account_content_middle-->
-
-            <div class="watcher_account_content_right">
-              <h2>My favourite creators</h2>
-
-              <ul class="watcher_fav_creators_list">
-                <li id="watcher_fav_creator_item">
-                  <img src="images/creator2.jpg" alt="A picture of a film creator" id="creator_list_picture" />
-                  <a href="creator_public.html" class="list_link" id="fav_creator">Creator>> </a>                         
-                </li>
-                <li id="watcher_fav_creator_item">
-                  <img src="images/creator2.jpg" alt="A picture of a film creator" id="creator_list_picture" />
-                  <a href="creator_public.html" class="list_link" id="fav_creator">Creator>> </a>                         
-                </li>
-                <li id="watcher_fav_creator_item">
-                  <img src="images/creator2.jpg" alt="A picture of a film creator" id="creator_list_picture" />
-                  <a href="creator_public.html" class="list_link" id="fav_creator">Creator>> </a>                         
-                </li>
-                <li><a href="#" class="list_link"> Show all>></a></li>
-              </ul> <!--End watcher_fave_creators_list-->
-              
-
-
-            </div> <!--End watcher_account_content_right-->
-
-
-        </section> <!--End watcher_account_content-->
-
+          <ul class="watcher_fav_creators_list">
+            <li id="watcher_fav_creator_item">
+              <img
+                src="images/creator2.jpg"
+                alt="A picture of a film creator"
+                id="creator_list_picture"
+              />
+              <a href="creator_public.html" class="list_link" id="fav_creator"
+                >Creator>>
+              </a>
+            </li>
+            <li id="watcher_fav_creator_item">
+              <img
+                src="images/creator2.jpg"
+                alt="A picture of a film creator"
+                id="creator_list_picture"
+              />
+              <a href="creator_public.html" class="list_link" id="fav_creator"
+                >Creator>>
+              </a>
+            </li>
+            <li id="watcher_fav_creator_item">
+              <img
+                src="images/creator2.jpg"
+                alt="A picture of a film creator"
+                id="creator_list_picture"
+              />
+              <a href="creator_public.html" class="list_link" id="fav_creator"
+                >Creator>>
+              </a>
+            </li>
+            <li><a href="#" class="list_link"> Show all>></a></li>
+          </ul>
+          <!--End watcher_fave_creators_list-->
+        </div>
+        <!--End watcher_account_content_right-->
+      </section>
+      <!--End watcher_account_content-->
     </main>
 
-    <!--Footer-->  
+    <!--Footer-->
     <footer>
       <div class="footer_contact_info">
-        <p>
-          Contact us: 
-          E-mail: post@squareeys.com 
-          Phone: (+XX)XXXXXXXX
-        </p>
-      </div>      
+        <p>Contact us: E-mail: post@squareeys.com Phone: (+XX)XXXXXXXX</p>
+      </div>
       <div class="footer_created_by">
-        <p>
-          Created by:
-          X. X. Xxxxxxxxx
-        </p>
+        <p>Created by: X. X. Xxxxxxxxx</p>
       </div>
     </footer>
   </body>

@@ -4,10 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Remember description-->
-    <meta 
-      name="description"
-      content="Search for films in our collection"
-    />
+    <meta name="description" content="Search for films in our collection" />
     <title>Square Eyes | Search</title>
     <link href="css/square_eyes_styles.css" rel="stylesheet" />
     <!--Specific for the page-->
@@ -18,76 +15,93 @@
       src="https://kit.fontawesome.com/b9ea43cd7c.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Hotjar Tracking Code for https://optimistic-lamarr-43e7e3.netlify.app -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2968503, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
 
-  <body>  
-  <!-- Navigatiom. -->      
-      <nav>
-        <figure class="navigation_logo_picture">
-          <a href="index.html" >
-            <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
-          </a>
-        </figure>
-        <div class="navigation_links">
-          <!--Remember to set current page class="current_page" -->
-          <ul>
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="search.html" class="current_page">Search</a></li>
-          </ul>
-        </div>
-        <div class="navigation_login_icon">
-          <a href="login.html" >
-            <i class="fas fa-user-circle"></i><br>
-            <p>Log in</p>
-          </a>
-        </div>
-    </nav> 
+  <body>
+    <!-- Navigatiom. -->
+    <nav>
+      <figure class="navigation_logo_picture">
+        <a href="index.html">
+          <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
+        </a>
+      </figure>
+      <div class="navigation_links">
+        <!--Remember to set current page class="current_page" -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="search.html" class="current_page">Search</a></li>
+        </ul>
+      </div>
+      <div class="navigation_login_icon">
+        <a href="login.html">
+          <i class="fas fa-user-circle"></i><br />
+          <p>Log in</p>
+        </a>
+      </div>
+    </nav>
 
-    <!--Main - page content --> 
-    <main> 
-        <section class="search_form_section">
-            <h1>Search for films</h1>
+    <!--Main - page content -->
+    <main>
+      <section class="search_form_section">
+        <h1>Search for films</h1>
 
-            <form action="search_results.html" class="search_form">
+        <form action="search_results.html" class="search_form">
+          <div class="search_fild_and_criterium">
+            <div class="search_field">
+              <input
+                type="search"
+                name="search"
+                placeholder="Title"
+                id="search_input"
+              />
+            </div>
 
-                <div class="search_fild_and_criterium">
-                    <div class="search_field">
-                        <input type="search" name="search" placeholder="Title" id="search_input" />                    
-                    </div>
-
-                    <div class="sorting_criterium">
-                        <label>Sort by</label>
-                        <input type="checkbox" id="oldest" />
-                        <label for="oldest">Oldest</label>
-                        <input type="checkbox" id="newest" />
-                        <label for="newest">Newest</label>
-                        <input type="checkbox" id="most_views" />
-                        <label for="most_views">Most views</label>
-                    </div>
-                </div>
-                <div class="search_button">
-                    <a href="search_results.html" id="search_button"><i class="fas fa-search"></i></a>
-                </div>
-            </form><!--End search_form-->
-
-        </section> <!--End search_form_section-->
+            <div class="sorting_criterium">
+              <label>Sort by</label>
+              <input type="checkbox" id="oldest" />
+              <label for="oldest">Oldest</label>
+              <input type="checkbox" id="newest" />
+              <label for="newest">Newest</label>
+              <input type="checkbox" id="most_views" />
+              <label for="most_views">Most views</label>
+            </div>
+          </div>
+          <div class="search_button">
+            <a href="search_results.html" id="search_button"
+              ><i class="fas fa-search"></i
+            ></a>
+          </div>
+        </form>
+        <!--End search_form-->
+      </section>
+      <!--End search_form_section-->
     </main>
 
-    <!--Footer-->  
+    <!--Footer-->
     <footer>
       <div class="footer_contact_info">
-        <p>
-          Contact us: 
-          E-mail: post@squareeys.com 
-          Phone: (+XX)XXXXXXXX
-        </p>
-      </div>      
+        <p>Contact us: E-mail: post@squareeys.com Phone: (+XX)XXXXXXXX</p>
+      </div>
       <div class="footer_created_by">
-        <p>
-          Created by:
-          X. X. Xxxxxxxxx
-        </p>
+        <p>Created by: X. X. Xxxxxxxxx</p>
       </div>
     </footer>
   </body>
