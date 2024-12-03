@@ -1,0 +1,56 @@
+.login_form_section {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+
+  align-items: center;
+}
+
+.comment {
+  margin-top: 200px;
+}
+
+#email_field,
+#password_field {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#email_label {
+  grid-area: email_label;
+}
+#email_field {
+  grid-area: email_field;
+}
+#password_label {
+  grid-area: password_label;
+}
+#password_field {
+  grid-area: password_field;
+}
+
+.login_form {
+  display: grid;
+  grid-template-areas:
+    "email_label email_field"
+    "password_label password_field";
+}
+
+#email_label {
+  grid-column-start: 1;
+}
+
+#password_label {
+  grid-column-start: 1;
+}
+
+.login_button_section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.comment {
+  text-align: center;
+  margin-bottom: 2em;
+}

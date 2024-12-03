@@ -1,0 +1,45 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#film {
+  grid-area: film;
+}
+#title {
+  grid-area: title;
+}
+#created_by {
+  grid-area: created_by;
+}
+#creator {
+  grid-area: creator;
+}
+#topay {
+  grid-area: topay;
+}
+#sum {
+  grid-area: sum;
+}
+
+.payment_summary {
+  display: grid;
+  grid-template-areas:
+    "film title"
+    "created_by creator"
+    "topay sum";
+}
+
+.topayment {
+  margin-top: 50px;
+}
+
+#topayment_button {
+  padding: 10px 30px;
+}
+
+.paypal {
+  margin-bottom: 10px;
+}

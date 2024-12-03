@@ -1,0 +1,116 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Remember description-->
+  <meta 
+    name="description"
+    content="Create account to enjoy member features"
+  />
+  <title>Square Eyes | Create Account</title>
+  <link href="css/square_eyes_styles.css" rel="stylesheet" />
+  <!--Specific for the page-->
+  <link href="css/create_account.css" rel="stylesheet" />
+  <!--Media queries-->
+  <link href="css/media.css" rel="stylesheet" />
+
+  <script
+    src="https://kit.fontawesome.com/b9ea43cd7c.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Hotjar Tracking Code for https://optimistic-lamarr-43e7e3.netlify.app -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2968503,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+
+<body>  
+<!-- Navigatiom. -->      
+    <nav>
+      <figure class="navigation_logo_picture">
+        <a href="index.html" >
+          <img src="images/Square_Eyes_Logo.png" alt="Square Eyes Logo" />
+        </a>
+      </figure>
+      <div class="navigation_links">
+        <!--Remember to set current page class="current_page" -->
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="create_account.html" class="current_page">Create Account</a></li>
+        </ul>
+      </div>
+      <div class="navigation_login_icon">
+        <a href="login.html" >
+          <i class="fas fa-user-circle"></i><br>
+          <p>Log in</p>
+        </a>
+      </div>
+  </nav> 
+
+  <!--Main - page content --> 
+  <main> 
+    <h1>Create account</h1>
+
+    <section class="create_account_section">
+      <h2>Choose your role</h2>
+      <div class="radio_buttons">
+        <label for="creator_radio_button">Creator</label>
+        <input type="radio" name="role_radio_button" value="creator" id="creator_radio_button"/>
+        <label for="watcher_radion_button">Watcher</label>
+        <input type="radio" name="role_radio_button" value="watcher" id="watcher_radion_button"/>
+      </div>
+      <h2>Fill in the form</h2>
+      <p>All fields are required</p>
+      <form class="create_account_form" action="account_created.html">
+        <section class="input_fields">
+          <label for="crt_screenname_field" id="crt_screenname_label">Screen name</label>
+          <input type="text" name="screenname" id="crt_screenname_field"  placeholder="Creator"/>
+          <label for="crt_email_field" id="crt_email_label" >E-mail</label>
+          <input type="email" name="email" id="crt_email_field" placeholder="creator@email.com"/>
+          <label for="password_field" id="crt_password_label" >Password</label>
+          <input type="password" name="password" id="crt_password_field" placeholder="*********" />
+          <lable for="crt_repeat_password_field" id="crt_repeat_password_label">Repeat password</lable>
+          <input type="password" name="password" id="crt_repeat_password_field" placeholder="*********"/> 
+        </section>     
+        
+        <div class="create_account_button_section">
+          <input type="submit" name="create_account" value="Create Account" class="cta cta_red" id="create_account_button" />
+        </div>
+        
+      </form>
+
+      
+      
+  </section>
+
+
+  </main>
+
+  <!--Footer-->  
+  <footer>
+    <div class="footer_contact_info">
+      <p>
+        Contact us: 
+        E-mail: post@squareeys.com 
+        Phone: (+XX)XXXXXXXX
+      </p>
+    </div>      
+    <div class="footer_created_by">
+      <p>
+        Created by:
+        X. X. Xxxxxxxxx
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
